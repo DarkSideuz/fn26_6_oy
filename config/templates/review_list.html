@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <h1>Review List</h1>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review.reviewer_name }} rated {{ review.book.title }}: {{ review.rating }}/5</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
